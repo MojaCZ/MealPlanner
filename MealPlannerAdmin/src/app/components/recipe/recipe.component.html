@@ -1,0 +1,85 @@
+
+<div class="container mat-elevation-z8">
+  <mat-horizontal-stepper [linear]=true #stepper>
+    <!-- ZÁKLADNÍ INFORMACE -->
+    <mat-step [stepControl]="baseFormGroup">
+      <form [formGroup]="baseFormGroup">
+        <div class="formContent">
+
+          <ng-template matStepLabel>Základní informace</ng-template>
+          <mat-form-field>
+            <mat-label>Jméno</mat-label>
+            <input matInput formControlName="name">
+          </mat-form-field>
+
+          <mat-radio-group formControlName="difficulty" class="difficulty">
+            <mat-radio-button class="difficultyBTN" value="1">Snadné</mat-radio-button>
+            <mat-radio-button class="difficultyBTN" value="2">Středně obtížné</mat-radio-button>
+          </mat-radio-group>
+
+          <div class="timeDiv">
+            <mat-form-field class="time">
+              <mat-label>Čas přípravy</mat-label>
+              <input matInput type="number" formControlName="prepT">
+              <span matSuffix>min</span>
+            </mat-form-field>
+
+            <mat-form-field class="time">
+              <mat-label>Čas vaření</mat-label>
+              <input matInput type="number" formControlName="cookT">
+              <span matSuffix>min</span>
+            </mat-form-field>
+          </div>
+
+          <mat-selection-list #shoes formControlName="meals">
+            <mat-list-option value="breakfast">Snídaně</mat-list-option>
+            <mat-list-option value="amSnack">Dopolední sváča</mat-list-option>
+            <mat-list-option value="pmSnack">Odpolední sváča</mat-list-option>
+            <mat-list-option value="trSnack">Po tréninku</mat-list-option>
+            <mat-list-option value="lunch">Oběd</mat-list-option>
+            <mat-list-option value="dinner">Večeře</mat-list-option>
+          </mat-selection-list>
+
+          <mat-form-field>
+            <mat-label>Dieta</mat-label>
+            <mat-select formControlName="diet" multiple>
+              <mat-option *ngFor="let option of selectDietOptions" [value]="option.value">
+                {{option.viewValue}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+
+        </div>
+        <div class="bottomBTNs">
+          <button mat-button style="width:100%" matStepperNext>Next</button>
+        </div>
+      </form>
+    </mat-step>
+
+    <!-- INGREDIENCE -->
+    <mat-step [stepControl]="ingredienceFormGroup">
+      <form [formGroup]="ingredienceFormGroup">
+        <ng-template matStepLabel>Ingredience</ng-template>
+
+        <mat-form-field>
+          <mat-label>Jméno</mat-label>
+          <input matInput formControlName="name">
+        </mat-form-field>
+
+        <mat-form-field>
+          <mat-label>Množství</mat-label>
+          <input matInput type="number" formControlName="amount">
+        </mat-form-field>
+
+        <mat-form-field>
+          <mat-label>Jméno jednotky</mat-label>
+          <input matInput formControlName="unitName">
+        </mat-form-field>
+
+        <div class="bottomBTNs">
+          <button mat-button style="width:100%" matStepperPrevious>Back</button>
+        </div>
+      </form>
+    </mat-step>
+  </mat-horizontal-stepper>
+</div>

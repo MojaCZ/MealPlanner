@@ -1,0 +1,69 @@
+<mat-expansion-panel hideToggle>
+  <mat-expansion-panel-header>
+    <mat-panel-title>{{recipe.name}}</mat-panel-title>
+    <mat-panel-description>
+      {{recipe.energy}}g
+      <div>
+        <button mat-icon-button color="accent" >
+            <mat-icon>edit</mat-icon>
+        </button>
+        <button mat-icon-button color="Foreground" >
+            <mat-icon>delete</mat-icon>
+        </button>
+      </div>
+
+    </mat-panel-description>
+  </mat-expansion-panel-header>
+  <div class="infoContainer">
+    <mat-list class="infoPanel">
+      <div mat-subheader>Nutritions</div>
+      <mat-divider></mat-divider>
+      <mat-list-item>
+        <div mat-line>proteins</div>
+        <div mat-line>{{recipe.prot}}g</div>
+      </mat-list-item>
+      <mat-list-item>
+        <div mat-line>carbohydrates</div>
+        <div mat-line>{{recipe.carb}}g</div>
+      </mat-list-item>
+      <mat-list-item>
+        <div mat-line>fat</div>
+        <div mat-line>{{recipe.fat}}g</div>
+      </mat-list-item>
+      <mat-list-item>
+        <div mat-line>fiber</div>
+        <div mat-line>{{recipe.fib}}g</div>
+      </mat-list-item>
+    </mat-list>
+
+    <mat-list class="infoPanel">
+      <div mat-subheader>Alergeny</div>
+      <mat-divider></mat-divider>
+      <mat-list-item *ngFor="let allergen of recipe.allergens">
+        <div mat-line>{{allergen}}</div>
+      </mat-list-item>
+    </mat-list>
+
+    <mat-list class="infoPanel">
+      <div mat-subheader>Kategorie</div>
+      <mat-divider></mat-divider>
+      <mat-list-item *ngFor="let category of recipe.category">
+        <div mat-line>{{category}}</div>
+      </mat-list-item>
+    </mat-list>
+    <mat-list class="infoPanel">
+      <div mat-subheader>Potraviny</div>
+      <mat-divider></mat-divider>
+      <mat-list-item *ngFor="let ingredience of recipe.ingredience">
+        <div mat-line>{{ingredience.amount}} X {{ingredience.name}} ({{ingredience.amount}} X {{ingredience.unit.name}})</div>
+      </mat-list-item>
+    </mat-list>
+  </div>
+
+  <mat-action-row>
+    <button mat-button color="foreground">Click me if you dare</button>
+    <button mat-icon-button color="foreground" aria-label="Example icon button with a home icon">
+        <mat-icon>delete</mat-icon>
+    </button>
+  </mat-action-row>
+</mat-expansion-panel>

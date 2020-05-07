@@ -1,0 +1,42 @@
+.window {
+  display: block;
+  padding: 0;
+  margin: 30px;
+  font-weight: 400;
+  font-family: Roboto,Helvetica Neue Light,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
+  border: 1px solid rgba(0,0,0,.03);
+  box-shadow: 0 2px 2px rgba(0,0,0,.24), 0 0 2px rgba(0,0,0,.12);
+
+}
+
+.topBar {
+      padding: 8px 20px;
+  align-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  padding: 8px 20px;
+  color: rgba(0,0,0,0.54);
+  background: #f2f2f2;
+}
+
+.topBarH {
+  -webkit-box-flex: 1;
+  flex: 1 1 auto;
+}
+
+.example-headers-align .mat-expansion-panel-header-description {
+  flex-basis: 0;
+}
+
+.example-headers-align .mat-expansion-panel-header-description {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.example-headers-align .mat-form-field + .mat-form-field {
+  margin-left: 8px;
+}

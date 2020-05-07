@@ -1,0 +1,58 @@
+<form [formGroup]="formGroup" class="mat-elevation-z8 addForm">
+
+  <div class="header">
+    Přidat surovinu
+    <button mat-button class="arrowBTN"><mat-icon>keyboard_arrow_right</mat-icon></button>
+  </div>
+
+  <mat-form-field>
+    <mat-label>Jméno</mat-label>
+    <input matInput formControlName="name">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Proteiny</mat-label>
+    <input matInput type="number" formControlName="prot">
+    <span matSuffix>g</span>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Cukry</mat-label>
+    <input matInput type="number" formControlName="carb">
+    <span matSuffix>g</span>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Tuky</mat-label>
+    <input matInput type="number" formControlName="fat">
+    <span matSuffix>g</span>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Vláknina</mat-label>
+    <input matInput type="number" formControlName="fib">
+    <span matSuffix>g</span>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Energie</mat-label>
+    <input matInput type="number" formControlName="energy">
+    <span matSuffix>/100g</span>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Jméno jenotky</mat-label>
+    <input matInput formControlName="unitName">
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Gramáž</mat-label>
+    <input matInput type="number" formControlName="unitGrammage">
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Alergeny</mat-label>
+    <input matInput formControlName="allergens">
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Kategorie</mat-label>
+    <input matInput formControlName="category">
+  </mat-form-field>
+
+</form>

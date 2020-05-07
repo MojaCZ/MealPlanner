@@ -1,0 +1,10 @@
+UNIQUE ID,Potravina,Měrná jednotka,Gramáž měrné jednotky,Energie (kcal),Energie (kJ),Bílkoviny,Sacharidy,Tuky,Vláknina,,
+,B3,AF3,AG4,Z3/100*$AG3,AA3/100*$AG3,AB3/100*$AG3,AC3/100*$AG3,AD3/100*$AG3,E3/100*$AE3,,
+SUROVINA1585423508101,Agar,g,100,336,1428,"0,6","83,4",0,0,"alergen1, alergen2",kategorie1
+SUROVINA1585423560777,"Aloe vera, listy",g,100,25,105,0,"3,4","0,7","2,7",alergen3,"kategorie1, kategorie3"
+SUROVINA1585423582508,Banány - kus,střední kus,150,147,"622,5","1,65","32,4","0,45","3,45",alergen2,kategorie2
+SUROVINA1585423583110,"Banány, lyofilizované",g,100,366,1549,"6,7",78,"0,9","9,5",,
+SUROVINA1585423636025,Broskve,g,100,48,205,"0,9",10,"0,2","1,5",,
+SUROVINA1585423636994,Broskve ks,střední kus,175,84,"358,75","1,575","17,5","0,35","2,625",,
+SUROVINA1585423579129,Ananas sušený,g,100,354,1501,"0,5","85,9","0,2","3,5",,
+SUROVINA1585423612512,"Ananas, lyofilizovaný",g,100,350,1483,"3,5","77,8","0,6","9,9",,

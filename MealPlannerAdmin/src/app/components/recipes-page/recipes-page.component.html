@@ -1,0 +1,19 @@
+<div class="window">
+  <div class="topBar">
+    <div class="topBarH">Recepty</div>
+    <button routerLink="/recipe" routerLinkActive="active" mat-icon-button color="primary" aria-label="Example icon button with a home icon">
+        <mat-icon>add</mat-icon>
+    </button>
+    <button mat-icon-button color="primary" aria-label="Example icon button with a home icon">
+        <mat-icon>home</mat-icon>
+    </button>
+  </div>
+
+  <mat-accordion class="example-headers-align">
+    <app-recipe-tile
+      *ngFor="let recipe of recipes"
+      [recipe] = recipe
+    ></app-recipe-tile>
+  </mat-accordion>
+
+</div>

@@ -1,0 +1,116 @@
+{
+  "name": "Agar",
+  "units": [
+    {
+      "name": "g",
+      "grammage": "100"
+    }
+  ],
+  "energy": "336",
+  "prot": "0,6",
+  "carb": "83,4",
+  "fat": "0",
+  "fib": "0",
+  "allergens": "alergen1, alergen2",
+  "category": "kategorie1"
+},
+{
+  "name": "Aloe vera, listy",
+  "units": [
+    {
+      "name": "g",
+      "grammage": "100"
+    }
+  ],
+  "energy": "25",
+  "prot": "0",
+  "carb": "3,4",
+  "fat": "0,7",
+  "fib": "2,7",
+  "allergens": "alergen3",
+  "category": "kategorie1, kategorie3"
+},
+{
+  "name": "Banány",
+  "units": [
+    {
+      "name": "střední kus",
+      "grammage": "150"
+    }
+  ],
+  "energy": "147",
+  "prot": "1,65",
+  "carb": "32,4",
+  "fat": "0,45",
+  "fib": "3,45",
+  "allergens": "alergen2",
+  "category": "kategorie2"
+},
+{
+  "name": "Banány, lyofilizované",
+  "units": [
+    {
+      "name": "g",
+      "grammage": "100"
+    }
+  ],
+  "energy": "366",
+  "prot": "6,7",
+  "carb": "78",
+  "fat": "0,9",
+  "fib": "9,5",
+  "allergens": "",
+  "category": ""
+},
+{
+  "name": "Broskve",
+  "units": [
+    {
+      "name": "g",
+      "grammage": "100"
+    },
+    {
+      "name": "střední kus",
+      "grammage": "175"
+    }
+  ],
+  "energy": "48",
+  "prot": "0,9",
+  "carb": "10",
+  "fat": "0,2",
+  "fib": "1,5",
+  "allergens": "",
+  "category": ""
+},
+{
+  "name": "Ananas sušený",
+  "units": [
+    {
+      "name": "g",
+      "grammage": "100"
+    }
+  ],
+  "energy": "354",
+  "prot": "0,5",
+  "carb": "85,9",
+  "fat": "0,2",
+  "fib": "3,5",
+  "allergens": "",
+  "category": ""
+},
+{
+  "name": "Ananas, lyofilizovaný",
+  "units": [
+    {
+      "name": "g",
+      "grammage": "100"
+    }
+  ],
+  "energy": "350",
+  "prot": "3,5",
+  "carb": "77,8",
+  "fat": "0,6",
+  "fib": "9,9",
+  "allergens": "",
+  "category": ""
+}

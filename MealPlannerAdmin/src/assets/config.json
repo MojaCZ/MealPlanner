@@ -1,0 +1,45 @@
+{
+  "allergens":[
+    "obiloviny",
+    "korýši",
+    "vejce",
+    "ryby",
+    "arašídy",
+    "sója",
+    "mléko",
+    "skořáphové plody",
+    "celer",
+    "hořčice",
+    "sezam",
+    "oxid siřičitý a siřičitany",
+    "vlčí bob",
+    "měkkýši"
+  ],
+  "diet":[
+    "keto",
+    "paleo",
+    "racionální strava",
+    "sacharidové vlny",
+    "lowcarbs",
+    "vegan",
+    "vege"
+  ],
+  "category":[
+    "olivy",
+    "rajčata",
+    "cibule",
+    "ryby",
+    "hovězí maso",
+    "vepřové maso",
+    "drůbež",
+    "houby",
+    "játra",
+    "pohanka",
+    "mléko"
+  ],
+  "difficulty":{
+    "1":"lehké",
+    "2":"střední",
+    "3":"těžké"
+  }
+}
