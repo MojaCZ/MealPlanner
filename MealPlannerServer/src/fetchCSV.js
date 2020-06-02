@@ -92,29 +92,32 @@ processLineByLine('../assets/example2.csv').then(function (resources) {
     var skip = 0;
     var limit = 20;
     limit = limit - skip;
-    // Resource.collection.drop()
-    // .then(() => {
-    var ResourcesModel = mongoose.model('resources', resourceSchema, 'resources');
-    ResourcesModel.collection.insert(resources, function (err, docs) {
-        if (err) {
-            console.log(err);
-            return;
-        }
-        else {
-            console.log("Multiple documents inserted");
-        }
+    Resource.deleteMany({}, function (err) {
+        console.log(err);
+    })
+        .then(function () {
+        var ResourcesModel = mongoose.model('resources', resourceSchema, 'resources');
+        ResourcesModel.collection.insert(resources, function (err, docs) {
+            if (err) {
+                console.log(err);
+                return;
+            }
+            else {
+                console.log("Multiple documents inserted");
+            }
+        });
+        // Resource.find()
+        //   .exec()
+        //   .then((doc: any) => {
+        //     console.log("FOUND DOCS")
+        //     console.log(doc);
+        //   })
+        //   .catch((err: any) => {
+        //     console.log(err);
+        //   })
+    })["catch"](function (err) {
+        console.log(err);
     });
-    // Resource.find()
-    //   .exec()
-    //   .then((doc: any) => {
-    //     console.log("FOUND DOCS")
-    //     console.log(doc);
-    //   })
-    //   .catch((err: any) => {
-    //     console.log(err);
-    //   })
-})["catch"](function (err) {
-    console.log(err);
 });
 function processLineByLine(fileName) {
     var e_1, _a;

@@ -1,3 +1,3 @@
 export const env = {
-  BACKEND_HOST: "http://localhost:8080"
+  BACKEND_HOST: 'http://localhost:8080'
 };

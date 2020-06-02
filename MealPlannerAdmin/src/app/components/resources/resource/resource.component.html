@@ -1,4 +1,4 @@
-<form [formGroup]="formGroup" class="mat-elevation-z8 addForm">
+<form *ngIf="formGroup" [formGroup]="formGroup" class="mat-elevation-z8 addForm">
 
   <div class="header">
     Přidat surovinu
@@ -52,12 +52,20 @@
 
   <mat-form-field>
     <mat-label>Alergeny</mat-label>
-    <input matInput formControlName="allergens">
+    <mat-select formControlName="allergens" multiple>
+      <mat-option *ngFor="let allergen of allergens" [value]="allergen">{{allergen}}</mat-option>
+    </mat-select>
   </mat-form-field>
 
   <mat-form-field>
     <mat-label>Kategorie</mat-label>
-    <input matInput formControlName="category">
+    <mat-select formControlName="category" multiple>
+      <mat-option *ngFor="let cat of category" [value]="cat">{{cat}}</mat-option>
+    </mat-select>
   </mat-form-field>
+
+  <div class="footer">
+    <button mat-button class="submitBTN">Odeslat změny</button>
+  </div>
 
 </form>

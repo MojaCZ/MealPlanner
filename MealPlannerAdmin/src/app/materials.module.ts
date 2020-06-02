@@ -10,11 +10,12 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatSelectModule } from '@angular/material/select';
-import { MatCheckboxModule } from '@angular/material/checkbox'
+import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatStepperModule } from '@angular/material/stepper';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
+import {MatAutocompleteModule} from '@angular/material/autocomplete';
 
 const modules = [
   MatButtonModule,
@@ -32,8 +33,9 @@ const modules = [
   MatStepperModule,
   MatTableModule,
   MatPaginatorModule,
-  MatSortModule
-]
+  MatSortModule,
+  MatAutocompleteModule
+];
 
 @NgModule({
   imports: modules,

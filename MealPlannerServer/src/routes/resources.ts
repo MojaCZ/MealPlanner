@@ -6,13 +6,28 @@ import "dotenv/config";
 
 
 // *************** GET ***************
-// startsWith will return all documnets where name starts with :name
-router.get('/startsWith/:name', (req: express.Request, res: express.Response, next: express.NextFunction) => {
-  let regexp = new RegExp("^" + req.params.name);
-  Resource.find({ name: regexp})
+// return resource by _id
+router.get('/getById/:id', (req: express.Request, res: express.Response, next: express.NextFunction) => {
+  Resource.find({ _id: req.params.id})
     .exec()
     .then( (doc:any) => {
       res.status(200).json(doc)
+    })
+    .catch( (err:any) => {
+      res.status(500).json(err)
+    })
+})
+
+// return list of all resources
+router.get('/getResourcesList/', (req: express.Request, res: express.Response, next: express.NextFunction) => {
+  Resource.find({})
+    .exec()
+    .then( (doc:any) => {
+      const resourcesList: {id: string, name: string}[] = [];
+      doc.forEach( (resource: any) => {
+        resourcesList.push({id: resource._id, name: resource.name})
+      })
+      res.status(200).json(resourcesList);
     })
     .catch( (err:any) => {
       res.status(500).json(err)

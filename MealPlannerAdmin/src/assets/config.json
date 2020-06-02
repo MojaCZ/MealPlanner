@@ -1,21 +1,21 @@
 {
-  "allergens":[
-    "obiloviny",
-    "korýši",
-    "vejce",
-    "ryby",
-    "arašídy",
-    "sója",
-    "mléko",
-    "skořáphové plody",
-    "celer",
-    "hořčice",
-    "sezam",
-    "oxid siřičitý a siřičitany",
-    "vlčí bob",
-    "měkkýši"
+  "allergens": [
+    "Obiloviny obsahující lepek",
+    "Korýši",
+    "Vejce",
+    "Ryby",
+    "Podzemnice olejná (arašídy)",
+    "Sójové boby (sója)",
+    "Mléko",
+    "Skořápkové plody",
+    "Celer",
+    "Hořčice",
+    "Sezamová semena (sezam)",
+    "Oxid siřičitý a siřičitany",
+    "Vlčí bob (Lupina)",
+    "Měkkýši"
   ],
-  "diet":[
+  "diet": [
     "keto",
     "paleo",
     "racionální strava",
@@ -24,22 +24,25 @@
     "vegan",
     "vege"
   ],
-  "category":[
-    "olivy",
-    "rajčata",
-    "cibule",
-    "ryby",
-    "hovězí maso",
-    "vepřové maso",
-    "drůbež",
-    "houby",
-    "játra",
-    "pohanka",
-    "mléko"
+  "category": [
+    "Olivy",
+    "Rajčata",
+    "Cibule",
+    "Ryby",
+    "Mořské plody",
+    "Maso - Hovězí",
+    "Maso - Vepřové",
+    "Maso - Drůbež",
+    "Maso - Obecně",
+    "Houby",
+    "Játra",
+    "Pohanka",
+    "Mléko",
+    "Brokolice"
   ],
-  "difficulty":{
-    "1":"lehké",
-    "2":"střední",
-    "3":"těžké"
+  "difficulty": {
+    "1": "lehké",
+    "2": "střední",
+    "3": "těžké"
   }
 }

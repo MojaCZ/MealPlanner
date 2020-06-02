@@ -21,21 +21,45 @@ export class ResourceComponent implements OnInit {
   resource: Resource;
   id: string;
 
+  allergens: string[] = ['Obiloviny obsahující lepek', 'Korýši', 'Vejce', 'Ryby', 'Podzemnice olejná (arašídy)',
+    'Sójové boby (sója)', 'Mléko', 'Skořápkové plody', 'Celer', 'Hořčice', 'Sezamová semena (sezam)',
+    'Oxid siřičitý a siřičitany', 'Vlčí bob (Lupina)', 'Měkkýši'
+  ];
+
+  category: string[] = [
+    'Olivy',
+    'Rajčata',
+    'Cibule',
+    'Ryby',
+    'Mořské plody',
+    'Maso - Hovězí',
+    'Maso - Vepřové',
+    'Maso - Drůbež',
+    'Maso - Obecně',
+    'Houby',
+    'Játra',
+    'Pohanka',
+    'Mléko',
+    'Brokolice'
+  ];
+
   constructor(
     private formBuilder: FormBuilder,
     private router: Router,
     private route: ActivatedRoute,
     private resourcesService: ResourcesService,
-    ) { }
+  ) { }
 
-  ngOnInit(){
+  ngOnInit() {
     if (this.resourcesService.resources.length <= 0) {
       this.router.navigate(['/']);
     }
     this.route.params.subscribe((params) => {
       this.id = params.id;
-      this.resource = this.resourcesService.getResourceById(params.id);
-      this.loadParams(this.resource);
+      this.resourcesService.getResourceById(params.id).subscribe(data => {
+        this.resource = data;
+        this.loadParams(this.resource);
+      });
     });
   }
 

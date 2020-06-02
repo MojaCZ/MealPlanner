@@ -72,32 +72,26 @@ processLineByLine('../assets/example2.csv').then((resources) => {
   let limit = 20;
   limit = limit - skip
 
-  // Resource.collection.drop()
-  // .then(() => {
-
-  const ResourcesModel = mongoose.model('resources', resourceSchema, 'resources');
-
-  ResourcesModel.collection.insert(resources, function (err, docs) {
-    if (err) {
+  Resource.deleteMany({}, (err) => {
+    console.log(err)
+  })
+  .then(() => {
+    const ResourcesModel = mongoose.model('resources', resourceSchema, 'resources');
+  
+    ResourcesModel.collection.insert(resources, function (err, docs) {
+      if (err) {
+        console.log(err)
+        return;
+      } else {
+        console.log("Multiple documents inserted")
+        return;
+      }
+    })
+  }).catch(err => {
       console.log(err)
-      return
-    } else {
-      console.log("Multiple documents inserted")
-    }
+    });
   })
 
-  // Resource.find()
-  //   .exec()
-  //   .then((doc: any) => {
-  //     console.log("FOUND DOCS")
-  //     console.log(doc);
-  //   })
-  //   .catch((err: any) => {
-  //     console.log(err);
-  //   })
-}).catch(err => {
-    console.log(err)
-  });
 
 async function processLineByLine(fileName: string) {
   const fileStream = fs.createReadStream(fileName, 'utf8');

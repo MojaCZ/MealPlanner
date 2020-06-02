@@ -1,14 +1,24 @@
-.header{
+.header, .footer{
   padding: 8px 20px;
   line-height: 40px;
   color: rgba(0, 0, 0, 0.54);
   background: rgba(0, 0, 0, 0.03);
   margin-bottom: 20px;
 }
+
 .mat-form-field {
   display: block;
   width: 300px;
   margin-left: 100px;
+}
+
+.footer {
+  margin-top: 30px;
+  padding: 0px;
+}
+
+.submitBTN {
+  width: 100%;
 }
 
 .addForm {

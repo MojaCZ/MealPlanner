@@ -1,3 +1,17 @@
+<form class="example-form">
+  <mat-form-field class="example-full-width">
+    <mat-label>Potraviny</mat-label>
+    <input type="text" matInput [formControl]="myControl" [matAutocomplete]="auto">
+    <mat-autocomplete #auto="matAutocomplete">
+      <mat-option 
+      *ngFor="let option of filteredOptions | async"
+      [routerLink]="['/resource', option.id]">
+        {{option.name}}
+      </mat-option>
+    </mat-autocomplete>
+  </mat-form-field>
+</form>
+
 <div class="mat-elevation-z8 data-table">
   <table mat-table class="full-width-table" matSort aria-label="Elements">
     <!-- species Column -->
@@ -52,28 +66,3 @@
     [pageSizeOptions]="[25, 50, 100, 250]">
   </mat-paginator>
 </div>
-
-
-
-<!-- <div class="window">
-  <div class="topBar">
-    <div class="topBarH">Suroviny</div>
-    <button mat-icon-button routerLink="/resource" routerLinkActive="active" color="primary" aria-label="Example icon button with a home icon">
-        <mat-icon>add</mat-icon>
-    </button>
-    <button mat-icon-button color="primary" aria-label="Example icon button with a home icon">
-        <mat-icon>home</mat-icon>
-    </button>
-  </div>
-
-
-  <mat-accordion class="example-headers-align"> -->
-
-<!-- <app-resource-tile
-      *ngFor = "let resource of resources"
-      [resource] = resource
-    ></app-resource-tile> -->
-
-<!-- </mat-accordion>
-
-</div> -->
