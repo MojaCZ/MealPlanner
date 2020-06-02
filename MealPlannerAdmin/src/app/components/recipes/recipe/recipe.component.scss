@@ -1,0 +1,55 @@
+.container {
+  width: 80%;
+  margin: 20px auto;
+  font-family: Roboto,Helvetica Neue Light,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
+  .formContent{
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px !important;
+
+  }
+  .bottomBTNs {
+    width: 100%;
+    margin-top: 20px;
+    padding: 0;
+    color: rgba(0, 0, 0, 0.54);
+    background: rgba(0, 0, 0, 0.03);
+    button {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  }
+}
+.difficulty {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+  .difficultyBTN {
+    // padding-right: 20px;
+  }
+}
+.timeDiv{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  .time {
+    display: inline-block;
+    width: 150px;
+
+  }
+}
+::ng-deep {
+  .mat-form-field {
+    margin-top: 16px;
+    display: block;
+    width: 100%;
+  }
+  .mat-horizontal-stepper-header-container {
+    background-color:#f2f2f2;
+  }
+  .mat-horizontal-content-container {
+    padding: 0 !important;
+  }
+}

@@ -33,31 +33,23 @@
       <th mat-header-cell *matHeaderCellDef mat-sort-header>energy</th>
       <td mat-cell *matCellDef="let row">{{row.energy}}</td>
     </ng-container>
-    <!-- K3 Column -->
-    <ng-container matColumnDef="units">
-      <th mat-header-cell *matHeaderCellDef mat-sort-header>units</th>
-      <td mat-cell *matCellDef="let row"><div *ngFor="let unit of row.units">{{unit.name}}/{{unit.grammage}}</div></td>
-    </ng-container>
-    <!-- K4 Column -->
-    <ng-container matColumnDef="allergens">
-      <th mat-header-cell *matHeaderCellDef mat-sort-header>allergens</th>
-      <td mat-cell *matCellDef="let row">{{row.allergens}}</td>
-    </ng-container>
-    <!-- K5 Column -->
-    <ng-container matColumnDef="category">
-      <th mat-header-cell *matHeaderCellDef mat-sort-header>category</th>
-      <td mat-cell *matCellDef="let row">{{row.category}}</td>
+
+    <!-- K2 Column -->
+    <ng-container matColumnDef="_id">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>_id</th>
+      <td mat-cell *matCellDef="let row">
+        <button mat-mini-fab enabled [routerLink]="['/resource', row._id]">
+          <mat-icon>edit</mat-icon>
+        </button>
+      </td>
     </ng-container>
 
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
     <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
   </table>
 
-  <mat-paginator #paginator
-      [length]="dataSource?.data.length"
-      [pageIndex]="0"
-      [pageSize]="50"
-      [pageSizeOptions]="[25, 50, 100, 250]">
+  <mat-paginator #paginator [length]="dataSource?.data.length" [pageIndex]="0" [pageSize]="50"
+    [pageSizeOptions]="[25, 50, 100, 250]">
   </mat-paginator>
 </div>
 
@@ -77,11 +69,11 @@
 
   <mat-accordion class="example-headers-align"> -->
 
-    <!-- <app-resource-tile
+<!-- <app-resource-tile
       *ngFor = "let resource of resources"
       [resource] = resource
     ></app-resource-tile> -->
 
-  <!-- </mat-accordion>
+<!-- </mat-accordion>
 
 </div> -->

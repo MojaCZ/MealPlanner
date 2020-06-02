@@ -1,3 +1,4 @@
+# MealPlannerServer
 ROUTES:
 * `/resources`
   * GET `/getRange/0-20`  will list first 21 from database

@@ -11,14 +11,15 @@ import { FormsModule } from '@angular/forms';
 
 // COMPONENTS
 import { NavigationComponent } from './components/navigation/navigation.component';
-import { ResourcesPageComponent } from './components/resources-page/resources-page.component';
-  import { ResourceTileComponent } from './components/resources-page/resource-tile/resource-tile.component';
-import { RecipesPageComponent } from './components/recipes-page/recipes-page.component';
-  import { RecipeTileComponent } from './components/recipes-page/recipe-tile/recipe-tile.component';
-import { ResourceComponent } from './components/resource/resource.component';
-import { RecipeComponent } from './components/recipe/recipe.component';
+import { ResourcesPageComponent } from './components/resources/resources-page/resources-page.component';
+import { ResourceTileComponent } from './components/resources/resources-page/resource-tile/resource-tile.component';
+import { RecipesPageComponent } from './components/recipes/recipes-page/recipes-page.component';
+import { RecipeTileComponent } from './components/recipes/recipes-page/recipe-tile/recipe-tile.component';
+import { ResourceComponent } from './components/resources/resource/resource.component';
+import { RecipeComponent } from './components/recipes/recipe/recipe.component';
 
 // SERVICES
+import { ResourcesService } from './components/resources/resources.service';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,7 @@ import { RecipeComponent } from './components/recipe/recipe.component';
     ReactiveFormsModule,
     FormsModule
   ],
-  providers: [],
+  providers: [ResourceComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
