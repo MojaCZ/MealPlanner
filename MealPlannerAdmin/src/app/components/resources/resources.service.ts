@@ -28,7 +28,7 @@ export class ResourcesService {
 
     const resourcesObserver = new Observable( (observer: Observer<Resource[]>) => {
       this.http
-      .get<Resource[]>(env.BACKEND_HOST + '/resources/getRange/0-10')
+      .get<Resource[]>(env.BACKEND_HOST + '/resources/getRange/0-50')
       .subscribe(data => {
         const resources: Resource[] = [];
         for (const resource of data) {

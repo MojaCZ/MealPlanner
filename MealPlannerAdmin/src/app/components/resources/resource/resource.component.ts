@@ -49,8 +49,8 @@ export class ResourceComponent implements OnInit {
       energy: [resource.energy],
       unitName: [resource.units[0].name],
       unitGrammage: [resource.units[0].grammage],
-      allergens: [resource.allergens[0]],
-      category: [resource.category[0]]
+      allergens: [resource.allergens],
+      category: [resource.category]
     });
   }
 }

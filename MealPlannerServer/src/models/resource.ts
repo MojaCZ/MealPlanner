@@ -9,8 +9,8 @@ const resourceSchema = new mongoose.Schema({
   carb: String,
   fat: String,
   fib: String,
-  allergens: String,
-  category: String
+  allergens: Array,
+  category: Array
 },{ collection: 'resources'})
 var Resource : mongoose.Model<any> = mongoose.model("Resource",resourceSchema)
 export = Resource

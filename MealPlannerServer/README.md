@@ -18,3 +18,10 @@ mongoServer:
 * `npm install --save mongoose`
 * `npm install --save morgan`   // tunnel all requests through logger
 * `npm install --save @types/morgan`
+
+
+## fetching into database from google docs
+google sheet ->  download csv -> save to assets
+in fetchCSV.ts set filename to saved csv
+compile with `tsc getchCSV.ts`
+run with `node fetchCSV.js`

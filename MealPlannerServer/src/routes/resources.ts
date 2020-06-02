@@ -18,6 +18,7 @@ router.get('/startsWith/:name', (req: express.Request, res: express.Response, ne
       res.status(500).json(err)
     })
 })
+
 // getRange will return documents from database by :start-end
 router.get('/getRange/:range', (req: express.Request, res: express.Response, next: express.NextFunction) => {
   console.log(req.params.range)

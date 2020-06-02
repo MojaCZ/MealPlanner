@@ -1,0 +1,66 @@
+UNIQUE ID,Potravina,Měrná jednotka,Gramáž měrné jednotky,Energie (kcal),Energie (kJ),Bílkoviny,Sacharidy,Tuky,Vláknina,Alergen 1,Alergen 2,Alergen 3,Alergen 4,Alergen 5,Alergen 6,Alergen 7,Alergen 8,Alergen 9,Alergen 10,Alergen 11,Alergen 12,Alergen 13,Alergen 14,Vyloučené skupiny potravin
+,B3,AF3,AG4,Z3/100*$AG3,AA3/100*$AG3,AB3/100*$AG3,AC3/100*$AG3,AD3/100*$AG3,E3/100*$AE3,,,,,,,,,,,,,,,
+SUROVINA1585423508101,Agar,g,100,336,1428,"0,6","83,4",0,0,,,,,,,,,,,,,,,
+SUROVINA1585423560777,"Aloe vera, listy",g,100,25,105,0,"3,4","0,7","2,7",,,,,,,,,,,,,,,
+SUROVINA1585423567162,Amarant semena,g,100,351,1476,"14,5","50,7","7,2","12,9",1. Obiloviny obsahující lepek,,,,,,,,,,,,,,
+SUROVINA1585423577379,"Amur bílý, maso z celé ryby",g,100,101,424,"16,9",0,"3,7",0,4. Ryby,,,,,,,,,,,,,,Ryby
+SUROVINA1585423577864,"Amur bílý, uzený, maso bez kůže",g,100,131,548,"20,5",0,"5,4",0,4. Ryby,,,,,,,,,,,,,,Ryby
+SUROVINA1585423578478,Ananas,g,100,50,212,"0,5","10,6","0,2",2,,,,,,,,,,,,,,,
+SUROVINA1585423579129,Ananas sušený,g,100,354,1501,"0,5","85,9","0,2","3,5",,,,,,,,,,,,,,,
+SUROVINA1585423612512,"Ananas, lyofilizovaný",g,100,350,1483,"3,5","77,8","0,6","9,9",,,,,,,,,,,,,,,
+SUROVINA1585423579672,Angrešt,g,100,44,186,"0,8","8,3","0,2",3,,,,,,,,,,,,,,,
+SUROVINA1585423580383,Arašídy,g,100,594,2460,"25,8","8,9","48,9","7,6",5. Podzemnice olejná (arašídy),,,,,,,,,,,,,,
+SUROVINA1585423614930,Arašídy loupané,g,100,610,2526,"25,3","11,8","49,3","8,7",5. Podzemnice olejná (arašídy),,,,,,,,,,,,,,
+SUROVINA1585423581292,Artyčok,střední kus,250,"157,5","652,5",8,"13,75","1,5",28,,,,,,,,,,,,,,,
+SUROVINA1585423616163,Avokádo - kus,střední kus,260,"431,6","1812,2","3,9","3,64","42,9","12,74",,,,,,,,,,,,,,,
+SUROVINA1585423582149,"Bábovka třená, modelová receptura",g,100,362,1521,"5,6","51,3","14,6","1,7",7. Mléko,1. Obiloviny obsahující lepek,8. Skořápkové plody,3. Vejce,,,,,,,,,,,
+SUROVINA1585423617728,"Banán, sušený",g,100,356,1504,"3,8","76,2","0,7","14,8",,,,,,,,,,,,,,,
+SUROVINA1585423582507,Banány,g,100,98,415,"1,1","21,6","0,3","2,3",,,,,,,,,,,,,,,
+SUROVINA1585423582508,Banány - kus,střední kus,150,147,"622,5","1,65","32,4","0,45","3,45",,,,,,,,,,,,,,,
+SUROVINA1585423583110,"Banány, lyofilizované",g,100,366,1549,"6,7",78,"0,9","9,5",,,,,,,,,,,,,,,
+SUROVINA1585423619116,Bér,g,100,353,1490,"12,4","55,4","5,3","17,4",,,,,,,,,,,,,,,
+SUROVINA1585423583601,"Bez černý, plody",g,100,73,301,"3,3","3,7","2,8","9,8",,,,,,,,,,,,,,,
+SUROVINA1585423584428,Bílkovina mléčná,g,100,62,261,"9,4","5,6","0,1",0,7. Mléko,,,,,,,,,,,,,,Mléko
+SUROVINA1585423620414,Bílkovina sójová izolovaná,g,100,366,1553,82,"3,5","2,7",0,,,,,,,,,,,,,,,
+SUROVINA1585423584987,"Bio-Margarín se sníženým obsahem tuku (60 %), Rama Bio, UNILEVER",g,100,541,2220,0,"0,2",60,0,,,,,,,,,,,,,,,
+SUROVINA1585423621666,Boby kakaové nepražené,g,100,559,2303,"12,8","2,7","49,3","26,8",,,,,,,,,,,,,,,
+SUROVINA1585423585460,"Borůvka, sušená",g,100,330,1379,7,"44,1",7,"31,3",,,,,,,,,,,,,,,
+SUROVINA1585423623080,Borůvky,g,100,51,213,"0,7","8,9","0,6","3,4",,,,,,,,,,,,,,,
+SUROVINA1585423624180,"Bramborák, modelová receptura",g,100,242,1020,"5,6","30,9",10,3,1. Obiloviny obsahující lepek,3. Vejce,,,,,,,,,,,,,
+SUROVINA1585423586861,Brambory rané,g,100,71,303,2,"14,7","0,2","1,4",,,,,,,,,,,,,,,
+SUROVINA1585423632849,"Brambory sladké (batáty, jamy)",g,100,66,277,"1,1","13,6","0,2","2,5",,,,,,,,,,,,,,,
+SUROVINA1585423630141,Brambory zimní,g,100,78,330,"2,4","15,6","0,3","1,6",,,,,,,,,,,,,,,
+SUROVINA1585423631637,"Brambory zimní, loupané, vařené v nesolené vodě",g,100,72,304,2,"14,4","0,3","1,7",,,,,,,,,,,,,,,
+SUROVINA1585423634538,Brokolice,g,100,37,153,"4,4",2,"0,3","4,1",,,,,,,,,,,,,,,Brokolice
+SUROVINA1585423635244,"Brokolice, lyofilizovaná",g,100,301,1259,"27,1","23,7","3,8","31,9",,,,,,,,,,,,,,,Brokolice
+SUROVINA1585423636025,Broskve,g,100,48,205,"0,9",10,"0,2","1,5",,,,,,,,,,,,,,,
+SUROVINA1585423636994,Broskve ks,střední kus,175,84,"358,75","1,575","17,5","0,35","2,625",,,,,,,,,,,,,,,
+SUROVINA1585423637840,"Broskve, lyofilizované",g,100,365,1549,3,"83,8","0,5","6,9",,,,,,,,,,,,,,,
+SUROVINA1585423638536,Brusinky,g,100,49,204,"0,6","8,6","0,7","3,1",,,,,,,,,,,,,,,
+SUROVINA1585423639410,Brusinky sušené,g,100,354,1503,"0,2","84,4","1,2","2,6",,,,,,,,,,,,,,,
+SUROVINA1585423640192,"Brusinky, lyofilizované",g,100,304,1276,"2,2","53,3","2,9",28,,,,,,,,,,,,,,,
+SUROVINA1585423640930,"Buchty kynuté, plněné tvarohovou náplní, modelová receptura",g,100,293,1235,9,"44,8","8,1","2,6",7. Mléko,1. Obiloviny obsahující lepek,5. Podzemnice olejná (arašídy),12. Oxid siřičitý a siřičitany,8. Skořápkové plody,3. Vejce,,,,,,,,,
+SUROVINA1585423641735,Bulgur pšeničný,g,100,343,1451,"13,5","64,5","1,5","8,6",1. Obiloviny obsahující lepek,,,,,,,,,,,,,,
+SUROVINA1585423642512,Bulgur pšeničný - lžíce,polévková lžíce,22,"75,46","319,22","2,97","14,19","0,33","1,892",1. Obiloviny obsahující lepek,,,,,,,,,,,,,,
+SUROVINA1585423643396,Bulgur špaldový,g,100,370,1560,"13,7","66,8","3,4","8,7",1. Obiloviny obsahující lepek,,,,,,,,,,,,,,
+SUROVINA1585423644165,Bulgur špaldový  lžíce,polévková lžíce,22,"81,4","343,2","3,014","14,696","0,748","1,914",1. Obiloviny obsahující lepek,,,,,,,,,,,,,,
+SUROVINA1585423645026,"Candát obecný, maso bez kůže",g,100,73,308,"17,7",0,"0,2",0,4. Ryby,,,,,,,,,,,,,,Ryby
+SUROVINA1585423645691,"Candát obecný, maso s kůží",g,100,73,310,18,0,"0,1",0,4. Ryby,,,,,,,,,,,,,,Ryby
+SUROVINA1585423646391,"Cejn velký,  maso s kůží",g,100,125,522,"16,8",0,"6,4",0,4. Ryby,,,,,,,,,,,,,,Ryby
+SUROVINA1585423647221,"Cejn velký, maso bez kůže",g,100,115,481,"17,2",0,"5,1",0,4. Ryby,,,,,,,,,,,,,,Ryby
+SUROVINA1585423647977,"Cejn velký, uzený, maso bez kůže",g,100,168,701,"18,8",0,"10,3",0,4. Ryby,,,,,,,,,,,,,,Ryby
+SUROVINA1585423648690,Celer bulvový,g,100,28,117,"1,5","2,6","0,3","4,5",9. Celer,,,,,,,,,,,,,,
+SUROVINA1585423649368,Celer řapíkatý,g,100,17,69,"0,7","0,7","0,2","4,7",9. Celer,,,,,,,,,,,,,,
+SUROVINA1585423650124,"Celer, sušený",g,100,273,1144,"11,4","37,6","1,6","31,6",9. Celer,,,,,,,,,,,,,,
+SUROVINA1585423650742,Cibule,g,100,39,164,"1,4","6,6","0,3","2,1",,,,,,,,,,,,,,,Cibule
+SUROVINA1585423651471,Cibule - kus,střední kus,90,"35,1","147,6","1,26","5,94","0,27","1,89",,,,,,,,,,,,,,,Cibule
+SUROVINA1585423652193,Cibule červená,g,100,45,191,"1,4","8,6","0,2","1,9",,,,,,,,,,,,,,,Cibule
+SUROVINA1585423652963,Cibule červená - kus,střední kus,90,"40,5","171,9","1,26","7,74","0,18","1,71",,,,,,,,,,,,,,,Cibule
+SUROVINA1585423653626,Cibule šalotka,g,100,44,187,"1,5","8,2","0,1","2,2",,,,,,,,,,,,,,,Cibule
+SUROVINA1585423654288,"Cibule, lyofilizovaná",g,100,326,1374,"12,4","57,3","1,2",18,,,,,,,,,,,,,,,Cibule
+SUROVINA1585423655008,"Cibule, sušená",g,100,316,1333,"9,6","57,4","0,7","20,9",,,,,,,,,,,,,,,Cibule
+SUROVINA1585423655751,Citróny,g,100,35,149,"0,7","6,1","0,4","2,3",,,,,,,,,,,,,,,
+SUROVINA1585423656423,Citróny - kus,střední kus,100,35,149,"0,7","6,1","0,4","2,3",,,,,,,,,,,,,,,
+SUROVINA1585423657120,Cizrna,g,100,308,1285,20,"27,2","5,8","33,5",,,,,,,,,,,,,,,
+SUROVINA1585423657839,Cuketa,g,100,14,57,"0,8","1,8","0,1",1,,,,,,,,,,,,,,,
+SUROVINA1585423658792,Cukr hroznový (glukóza),g,100,366,1557,"0,2","91,4",0,0,,,,,,,,,,,,,,,
